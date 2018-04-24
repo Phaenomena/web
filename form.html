@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+</head>
+
+<body>
+
+    <form action="form.html" method="GET">
+
+        <div>
+            <label>Prénom</label>
+            <input type="text" name="firstname" placeholder="John">
+            <label for="lastname">Nom</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+
+        <div>
+            <label for="nationality">Nationalité</label>
+            <input type="text" name="nationality" id="nationality" placeholder="Française" value="Française">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="exemple@xyz.com">
+        </div>
+
+        <div>
+            <label for="birthday">Date de naissance</label>
+            <input type="date" name="birthday" id="birthday" placeholder="jj/mm/aaaa">
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10">Comme value sur la balise input mais est remplacé par le placeholder</textarea>
+        </div>
+
+        <div>
+            <label>
+            <input type="radio" name="gender"> Madame
+            </label>
+            <label>
+            <input type="radio" name="gender"> Monsieur
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="cgv"> CGV
+            </label>
+            <label>
+                <input type="checkbox" name="newsletter" checked> Inscription Newsletter
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="number">
+            </label>
+        </div>
+    </form>
+
+</body>
+
+</html>
