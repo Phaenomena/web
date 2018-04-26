@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2,
+.title {
+    color: white;
+    text-align: left;
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+    background-color: darkslategrey;
+    border-radius: 4px 4px 0 0;
+}
+
+p,
+.content {
+    border-style: dashed;
+    padding: 10px;
+    margin: 0 10px 20px 10px;
+    text-align: justify;
+    font-size: 16px;
+    border-color: darkslategrey;
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    border-width: 2px;
+}
+
+h2.blue {
+    background-color: navy;
+}
+.blue {
+    border-color: navy;
+}
+
+h2.orange {
+    background-color: orange;
+}
+.orange {
+    border-color: orange;
+}

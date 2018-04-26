@@ -1,0 +1,44 @@
+body {
+    font: 16px Tahoma, Arial, sans-serif;
+}
+
+.box {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+    transition: box-shadow .4s ease;
+    /* box-shadow: 1px 1px 5px #CCCCCC; */
+}
+
+.box:hover {
+    box-shadow: 1px 1px 5px #CCCCCC;
+}
+
+.box-red {
+    border-color: red;
+}
+
+/* sélecteur pour avoir un ou plusieurs des enfants pour avoir plusieurs éléments identiques en style mais de couleur différente */
+.box-red .box-title {
+    background-color: red;
+    color: white;
+}
+
+.box-blue {
+    border-color: navy;
+}
+
+.box-blue .box-title {
+    background-color: navy;
+    color: white;
+}
+
+.box-title {
+    margin: 0;
+    border-bottom: inherit;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.box-content {
+    padding: 10px;
+}
