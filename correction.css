@@ -1,10 +1,27 @@
 body {
-    font: 16px Tahoma, Arial, sans-serif;
+    font: 1.125em Tahoma, Arial, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    display: table;
+    height: 0;
+    visibility: hidden;
+    /* clear: both; */
 }
 
 .box {
-    border: 1px solid #CCCCCC;
+    border: 0.125em solid #CCCCCC;
     margin-bottom: 20px;
+    position: relative;
     transition: box-shadow .4s ease;
     /* box-shadow: 1px 1px 5px #CCCCCC; */
 }
@@ -32,6 +49,27 @@ body {
     color: white;
 }
 
+.box-author {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: -45px;
+    right: 25px;
+}
+
+.box-author img {
+    width: 80px;
+}
+
+.box-author-name {
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 1px;
+    z-index: 1;
+}
+
 .box-title {
     margin: 0;
     border-bottom: inherit;
@@ -39,6 +77,31 @@ body {
     font-size: 20px;
 }
 
+.box-img {
+    float: left;
+    height: 200px;
+}
+
 .box-content {
     padding: 10px;
+    line-height: 24px;
+    /* background-image: url('https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjmtvTWztfaAhVCzxQKHYfwCLQQjRx6BAgAEAU&url=http%3A%2F%2Fognature.com%2Fnature-sunsets-sky-landscap-amazing-sunset-live-wallpaper-free-download%2F&psig=AOvVaw3TbM4QDz1dwK3li4OyVXJt&ust=1524820895501163');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.top-page {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.top-page img {
+    width: 50px;
+    opacity: .2;
+    transition: opacity .4s ease;
+}
+
+.top-page img:hover {
+    opacity: 1;
 }
