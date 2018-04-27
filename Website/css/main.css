@@ -45,10 +45,103 @@ a {
     background-attachment: fixed;
     height: 300px;
     overflow: hidden;
+    position: relative;
 }
 
 .sky-title {
     margin: 0;
     color: white;
     font-family: 'Montserrat', 'Open Sans';
+    font-size: 2em;
+    line-height: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    text-shadow: 2px 2px 5px rgb(94, 94, 94);
+}
+
+.sky-cloud1 {
+    height: 100px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    animation-name: cloudMoveX;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.sky-cloud2 {
+    height: 150px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    animation-name: cloudMoveX;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes cloudMoveX {
+    from {
+        transform: translateX(-370px);
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+.container {
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+.content article {
+    border: 1px solid #CCC;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.content article:last-child {
+    margin: 0;
+}
+
+.container aside.sidebar {
+/* la classe sidebar ne fonctionne qu'avec l'aside */
+    border: 1px solid #CCC;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+}
+
+.flex-footer {
+    width: auto;
+    height: 50px;
+    margin: 0 auto;
+    border-top: 1px solid #303952;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.associate a:hover {
+    text-decoration: underline;
+}
+
+.flex-square {
+    height: auto;
+    border: 2px solid white;
+    background: white;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-footer {
+        background-color: red;
+    }
 }
